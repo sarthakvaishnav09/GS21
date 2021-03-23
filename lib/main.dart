@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+<<<<<<< HEAD
 import 'package:solution21/home.dart';
+=======
+
+import 'package:solution21/yoga.dart';
+>>>>>>> 6759d99f21864631b86b5f8504b37404d32ad0e4
 
 void main() {
   runApp(MyApp());
@@ -137,7 +142,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
+<<<<<<< HEAD
                                     builder: (context) => HomePage()),
+=======
+                                    builder: (context) => (YogaPage())),
+>>>>>>> 6759d99f21864631b86b5f8504b37404d32ad0e4
                               );
                             },
                             shape: new RoundedRectangleBorder(
