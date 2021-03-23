@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:solution21/home.dart';
 
-
-
 void main() {
   runApp(MyApp());
 }
@@ -139,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Homeeee()),
+                                    builder: (context) => HomePage()),
                               );
                             },
                             shape: new RoundedRectangleBorder(
