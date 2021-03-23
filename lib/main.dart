@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-<<<<<<< HEAD
-import 'package:solution21/home.dart';
-=======
 
-import 'package:solution21/yoga.dart';
->>>>>>> 6759d99f21864631b86b5f8504b37404d32ad0e4
+import 'package:solution21/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -63,14 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
             child: DefaultTabController(
               length: 2,
               child: Scaffold(
-                resizeToAvoidBottomInset:
-                    false, // this avoids the overflow error
+                resizeToAvoidBottomInset: false,
                 backgroundColor: Color(0x00000),
                 appBar: TabBar(
                   indicatorColor: Colors.white,
-                  labelStyle: TextStyle(
-                      fontSize: 30.0,
-                      fontFamily: 'Family Name'), //For Selected tab
+                  labelStyle:
+                      TextStyle(fontSize: 30.0, fontFamily: 'Family Name'),
                   unselectedLabelStyle:
                       TextStyle(fontSize: 20.0, fontFamily: 'Family Name'),
                   tabs: [
@@ -142,11 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-<<<<<<< HEAD
                                     builder: (context) => HomePage()),
-=======
-                                    builder: (context) => (YogaPage())),
->>>>>>> 6759d99f21864631b86b5f8504b37404d32ad0e4
                               );
                             },
                             shape: new RoundedRectangleBorder(
