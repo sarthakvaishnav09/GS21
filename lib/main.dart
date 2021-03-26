@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage>
         { 
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => HomePage(userId: currentUser.uid)),
+            MaterialPageRoute(builder: (context) => HomePage(userId: currentUser.uid.toString())),
            );
         }
       }
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage>
     return Scaffold(
          
         // resizeToAvoidBottomInset: false,
-         resizeToAvoidBottomPadding: true,
+         //resizeToAvoidBottomPadding: true,
       body: Container(
         decoration: new BoxDecoration(
           image: new DecorationImage(
@@ -222,13 +222,21 @@ class _MyHomePageState extends State<MyHomePage>
 
                                   else
                                   {
-                                    auth
-                                    .signInWithEmailAndPassword(
+
+                                    //String userEmail,userName,phoneNumber;
+
+
+
+                                    
+                                    auth.signInWithEmailAndPassword(
                                         email: loginEmailController.text.trim(), password: loginPasswordController.text.trim())
-                                    .then((result) {
+                                    .then((result) 
+                                    {
+
+
                                     Navigator.pushReplacement(
                                     context,
-                                    MaterialPageRoute(builder: (context) => HomePage(userId: result.user.uid)),
+                                    MaterialPageRoute(builder: (context) => HomePage(userId: result.user.uid.toString())),
                                     );
                                 }).catchError((err) {
                                     print(err.message);
@@ -239,7 +247,7 @@ class _MyHomePageState extends State<MyHomePage>
                                             title: Text("Error"),
                                             content: Text(err.message),
                                             actions: [
-                                            FlatButton(
+                                            TextButton(
                                                 child: Text("Ok"),
                                                 onPressed: () {
                                                 Navigator.of(context).pop();
@@ -476,7 +484,7 @@ class _MyHomePageState extends State<MyHomePage>
                                               }).then((res) {
                                                 Navigator.pushReplacement(
                                                   context,
-                                                  MaterialPageRoute(builder: (context) => HomePage(userId: result.user.uid)),
+                                                  MaterialPageRoute(builder: (context) => HomePage(userId: result.user.uid.toString())),
                                                 );
                                               }).catchError((err2)
                                               {
