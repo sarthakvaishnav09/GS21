@@ -8,7 +8,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: Center(
+          child: Container(
         alignment: Alignment.center,
         decoration: new BoxDecoration(
           image: new DecorationImage(
@@ -16,7 +17,7 @@ class HomePage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-      ),
+      )),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,

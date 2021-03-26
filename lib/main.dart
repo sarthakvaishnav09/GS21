@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:solution21/home.dart';
+import 'package:solution21/selection.dart';
+import 'package:solution21/timetable.dart';
 
 void main() {
   runApp(MyApp());
@@ -136,7 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomePage()),
+                                    builder: (context) => TimeTablePage()),
                               );
                             },
                             shape: new RoundedRectangleBorder(
