@@ -1,10 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:solution21/dietContent.dart';
 import 'package:solution21/mental_health.dart';
 
-class DietPage extends StatelessWidget {
+class DietPage extends StatefulWidget 
+{
+  final String dietTrimester;
+
+  const DietPage({Key key, this.dietTrimester}) : super(key: key);
+  @override
+  DietPageState createState() => DietPageState();
+}
+
+class DietPageState extends State<DietPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+         iconTheme: IconThemeData(
+            color: Colors.black, //change your color here
+          ),
+      ),
+      
+      extendBodyBehindAppBar: true,
+
+
         body: Container(
           alignment: Alignment.center,
           decoration: new BoxDecoration(
@@ -15,16 +37,18 @@ class DietPage extends StatelessWidget {
           ),
           child: Column(
             children: [
+
+
               Container(
                   padding: EdgeInsets.only(top: 100),
                   child: (Column(children: [
                     Text(
                       'Diet',
                       textAlign: TextAlign.start,
-                      style: TextStyle(color: Colors.black, fontSize: 50),
+                      style: TextStyle(color: Colors.black, fontSize: 40),
                     ),
                     SizedBox(
-                      height: 50,
+                      height: 60,
                     ),
                     Align(
                       alignment: Alignment.topLeft,
@@ -41,12 +65,16 @@ class DietPage extends StatelessWidget {
                               "Breakfast",
                               style: TextStyle(fontSize: 25.0),
                             ),
-                            onPressed: () {
+                            onPressed: () 
+                            {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => MentalHealthPage()),
+                                    builder: (context) => DietContent(dietContentTrimester: widget.dietTrimester,
+                                                           dietContentTitle: "breakfast",
+                                                           dietContentImage: "assets/images/breakfast.jpg",)),
                               );
+
                             },
                             shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
@@ -56,7 +84,7 @@ class DietPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 50,
                     ),
                     Align(
                       alignment: Alignment.topRight,
@@ -70,10 +98,21 @@ class DietPage extends StatelessWidget {
                             textColor: Colors.black,
                             color: Colors.white,
                             child: Text(
-                              "Dinner",
+                              "Lunch",
                               style: TextStyle(fontSize: 25.0),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DietContent(dietContentTrimester: widget.dietTrimester,
+                                                                          dietContentTitle: "lunch",
+                                                           dietContentImage: "assets/images/lunch.jpg",)),
+                              );
+
+
+
+                            },
                             shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
                             ),
@@ -82,7 +121,7 @@ class DietPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 50,
                     ),
                     Align(
                       alignment: Alignment.centerLeft,
@@ -96,10 +135,19 @@ class DietPage extends StatelessWidget {
                             textColor: Colors.black,
                             color: Colors.white,
                             child: Text(
-                              "Lunch",
+                              "Snacks",
                               style: TextStyle(fontSize: 25.0),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DietContent(dietContentTrimester: widget.dietTrimester,
+                                                          dietContentTitle: "snacks",
+                                                          dietContentImage: "assets/images/snacks.jpg",)),
+                              );
+
+                            },
                             shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
                             ),
@@ -108,7 +156,7 @@ class DietPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 50,
                     ),
                     Align(
                       alignment: Alignment.centerRight,
@@ -122,10 +170,19 @@ class DietPage extends StatelessWidget {
                             textColor: Colors.black,
                             color: Colors.white,
                             child: Text(
-                              "Snacks",
+                              "Dinner",
                               style: TextStyle(fontSize: 25.0),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DietContent(dietContentTrimester: widget.dietTrimester,
+                                                                        dietContentTitle: "dinner",
+                                                                        dietContentImage: "assets/images/dinner.jpeg",)),
+                              );
+
+                            },
                             shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
                             ),
@@ -134,7 +191,7 @@ class DietPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 50,
                     ),
                     Align(
                       alignment: Alignment.bottomLeft,
@@ -148,10 +205,19 @@ class DietPage extends StatelessWidget {
                             textColor: Colors.black,
                             color: Colors.white,
                             child: Text(
-                              "What not to eat",
+                              "What not to eat?",
                               style: TextStyle(fontSize: 25.0),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DietContent(dietContentTrimester: widget.dietTrimester,
+                                                            dietContentTitle: "what not to eat?",
+                                                            dietContentImage: "assets/images/avoid-eating.jpg",)),
+                              );
+
+                            },
                             shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
                             ),
@@ -163,22 +229,8 @@ class DietPage extends StatelessWidget {
             ],
           ),
         ),
-        drawer: Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: <Widget>[
-              DrawerHeader(
-                child: Text('its drawer'),
-                decoration: BoxDecoration(
-                  color: Colors.pink,
-                ),
-              ),
-              ListTile(
-                title: Text('item1'),
-                onTap: () {},
-              )
-            ],
-          ),
-        ));
+   
+        
+        );
   }
 }
