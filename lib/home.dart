@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
         ),
          centerTitle: true,
 
-        title: Text("Home",style: TextStyle(color:Colors.white, fontSize: 25, fontWeight: FontWeight.bold),),
+        title: Text("Home",style: TextStyle(color:Colors.black, fontSize: 25, fontWeight: FontWeight.bold),),
 
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -97,6 +97,7 @@ class _HomePageState extends State<HomePage> {
                             cornerStyle: CornerStyle.bothCurve,
                             color: Color.fromARGB(30, 0, 169, 181),
                             thicknessUnit: GaugeSizeUnit.factor,
+                            
                           ),
                           pointers: <GaugePointer>[
                               RangePointer(
