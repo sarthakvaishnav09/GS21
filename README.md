@@ -1,16 +1,15 @@
 # solution21
 
-A new Flutter project.
+Garbha Mitra - GDSC Solution Challenge 2021
 
-## Getting Started
+## Getting Started 
+## Steps to run the application
 
-This project is a starting point for a Flutter application.
+# Android Devices :
 
-A few resources to get you started if this is your first Flutter project:
+1. Open the project in Android Studio or VS Code or an IDE where flutter projects run.
+2. Hit "Run the application" button on Android Studio or run the command "Flutter run" on VS Code.
+3. The application will be installed on your Android Device.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# iOS Devices :
+Haven't tested on iOS devices due to unavailability and our laptop cannot handle emulator (We have medium range laptops).
