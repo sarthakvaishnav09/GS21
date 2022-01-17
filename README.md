@@ -1,13 +1,46 @@
-# solution21
+# Garbha Sanskar with ANC
 
-Garbha Mitra - GDSC Solution Challenge 2021
+Garbha Sanskar with ANC application
+<br>Part of Hackathon - Solution Challenge 2021
 
-## Getting Started 
-## Steps to run the application
+## About the project
 
-# Android Devices :
+An application where women would get knowledge of the practices to be done during pregnancy to reduce Infant Mortality Rate worldwide. Practices include mixture of Garbha Sanskar and ANC.
+- Garbha sanskar is a Sanskrit term, which literally means 'education in the womb'. It is traditionally believed that a child's mental and behavioural development starts as soon as child is conceived. This knowledge can be traced back to ancient scriptures and is included in the Vedas.
+- Antenatal care (ANC) coverage is an indicator of access and use of health care during pregnancy. The antenatal period presents opportunities for reaching pregnant women with interventions that may be vital to their health and wellbeing and that of their infants.
 
-1. Open the project in Android Studio or VS Code or an IDE where flutter projects run.
-2. Hit "Run the application" button on Android Studio or run the command "Flutter run" on VS Code.
-3. The application will be installed on your Android Device.
+## About the application
 
+Features included:
+
+- Antenatal Care 
+- Garbha Sanskar
+- Online consultation with doctors
+
+
+<table>
+  <tr>
+    <td><img src = "https://github.com/sarthakvaishnav09/GS21/blob/master/assets/images/Screenshot_20210329-164114.jpg" alt = "LoginPage" width = "180" height = "380"></td>
+    <td><img src = "https://github.com/sarthakvaishnav09/GS21/blob/master/assets/images/Screenshot_20210329-163110.jpg" alt = "StoreList" width = "180" height = "380"></td>
+    <td><img src = "https://github.com/sarthakvaishnav09/GS21/blob/master/assets/images/InkedScreenshot_20210329-162931_LI.jpg" alt = "Stocks" width = "180" height = "380"></td>
+  </tr>
+</table>
+
+
+
+
+## Tech stack
+
+<table>
+  <tr>
+    <td><img src = "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png" alt="Flutter" width="50" height="50"></td>
+    <td>Flutter &nbsp&nbsp</td>
+  </tr>
+</table>
+<table>
+<tr>
+    <td><img src = "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png" alt="Firebase" width="50" height="50"></td>
+    <td>Firebase</td>
+  </tr>  
+</table>
+<br>
