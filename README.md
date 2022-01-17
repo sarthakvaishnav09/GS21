@@ -21,8 +21,9 @@ Features included:
 <table>
   <tr>
     <td><img src = "https://github.com/sarthakvaishnav09/GS21/blob/master/assets/images/Screenshot_20210329-164114.jpg" alt = "LoginPage" width = "180" height = "380"></td>
-    <td><img src = "https://github.com/sarthakvaishnav09/GS21/blob/master/assets/images/Screenshot_20210329-163110.jpg" alt = "StoreList" width = "180" height = "380"></td>
     <td><img src = "https://github.com/sarthakvaishnav09/GS21/blob/master/assets/images/InkedScreenshot_20210329-162931_LI.jpg" alt = "Stocks" width = "180" height = "380"></td>
+    <td><img src = "https://github.com/sarthakvaishnav09/GS21/blob/master/assets/images/Screenshot_20210329-163110.jpg" alt = "StoreList" width = "180" height = "380"></td>
+    <td><img src = "https://github.com/sarthakvaishnav09/GS21/blob/master/assets/images/Screenshot_20210326-235014.jpg" alt = "Stocks" width = "180" height = "380"></td>
   </tr>
 </table>
 
